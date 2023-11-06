@@ -1,0 +1,31 @@
+section {
+    margin: 15vh 10vh;
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(200px); /* 200px만큼 내림 */
+}
+section h2 {
+    font-size: 50px;
+    margin-bottom: 3vh;
+    transition: 0.5s 1s; /* 진행시간 딜레이  */
+    opacity: 0;
+}
+section p {
+    transition: 1s 1.5s;
+    opacity: 0;
+}
+
+section h2,
+section p {
+    transform: translateY(100px);
+}
+section.active h2,
+section.active p {
+    opacity: 1;
+}
+
+section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
